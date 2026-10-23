@@ -6,6 +6,7 @@ from unittest.mock import Mock, patch
 from security_project_sync import (
     APIError, DONE, Finding, GitHub, OPEN, Project, alert_finding,
     desired_status, managed_key, refresh_missing, workflow_finding,
+    synchronize,
 )
 
 
@@ -46,6 +47,25 @@ class SecurityTests(unittest.TestCase):
         api.call.side_effect = APIError("403")
         with self.assertRaises(APIError):
             refresh_missing(api, "secret-scanning:o/r:8")
+
+    def test_partial_sync_keeps_existing_alert_and_reports_missing_access_privately(self):
+        api = Mock()
+        api.pages.return_value = [{"full_name": "o/private", "owner": {"login": "o"},
+                                   "archived": False, "disabled": False}]
+        old = {"Repozytorium": "o/private", "Stan źródła": OPEN, "Typ zgłoszenia": "Sekrety"}
+        item = {"fieldValues": {"nodes": [{"text": value, "field": {"name": name}} for name, value in old.items()]}}
+        project = Mock()
+        project.managed = {"secret-scanning:o/private:8": item}
+        with patch("security_project_sync.Project", return_value=project), \
+             patch("security_project_sync.collect_repo", return_value=([], [("o/private", "Sekrety", "403")])), \
+             patch("security_project_sync.refresh_missing", side_effect=APIError("403")), \
+             patch("builtins.print") as public_log:
+            synchronize(api, "o", 1, True)
+        self.assertEqual(project.upsert.call_count, 1)
+        health = project.upsert.call_args.args[0]
+        self.assertEqual(health.key, "monitor:health")
+        self.assertIn("o/private", health.body)
+        self.assertNotIn("o/private", public_log.call_args.args[0])
 
     def test_draft_marker_survives_interrupted_field_updates(self):
         finding = Finding("dependabot:o/r:1", "o/r", "Dependabot", "title", "body")
