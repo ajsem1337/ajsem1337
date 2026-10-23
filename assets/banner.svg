@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title description">
+  <title id="title">ajsem</title>
+  <desc id="description">A dark terminal with a pink accent and a small cat. Linux, self-hosting and small useful tools.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#181822"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#f09bc0" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#f09bc0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#f09bc0"/>
+      <stop offset="1" stop-color="#c9b5ee"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#f09bc0" opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect x=".5" y=".5" width="959" height="259" rx="20" fill="url(#background)" stroke="#30303e"/>
+  <rect x="618" y="15" width="320" height="230" rx="12" fill="url(#dots)"/>
+  <ellipse cx="782" cy="132" rx="205" ry="140" fill="url(#glow)"/>
+  <path d="M24 48H936" stroke="#2b2c38"/>
+  <circle cx="30" cy="26" r="5" fill="#f09bc0"/>
+  <circle cx="49" cy="26" r="5" fill="#c9b5ee"/>
+  <circle cx="68" cy="26" r="5" fill="#8ccfc0"/>
+  <text x="480" y="31" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="11" letter-spacing="1.2" fill="#9290a5">ajsem@github: ~</text>
+  <text x="44" y="92" font-family="DejaVu Sans Mono, monospace" font-size="14" fill="#f09bc0">~ ❯ whoami</text>
+  <text x="41" y="158" font-family="DejaVu Sans, sans-serif" font-size="64" font-weight="700" letter-spacing="-3" fill="#f6edf3">ajsem<tspan fill="#f09bc0">.</tspan></text>
+  <text x="45" y="196" font-family="DejaVu Sans Mono, monospace" font-size="13" fill="#b8b3c9">Linux / self-hosting / small useful tools</text>
+  <rect x="45" y="219" width="77" height="3" rx="1.5" fill="url(#accent)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M710 156L716 101L746 120Q774 109 801 120L832 100L839 157Q840 189 810 200H740Q709 189 710 156Z" fill="#1d1928" stroke="url(#accent)" stroke-width="3"/>
+    <path d="M721 115L739 127M826 114L810 128" stroke="#f09bc0" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M737 151Q743 145 749 151M798 151Q804 145 810 151" stroke="#ead9ef" stroke-width="3"/>
+    <path d="M770 163L775 167L780 163M775 167V173M775 173Q767 180 761 173M775 173Q783 180 789 173" stroke="#f09bc0" stroke-width="2.5"/>
+    <path d="M716 164L694 159M716 174L695 177M833 164L855 159M833 174L854 177" stroke="#b9a4cf" stroke-width="2"/>
+    <path d="M875 84V98M868 91H882M685 113V123M680 118H690" stroke="#c9b5ee" stroke-width="2"/>
+  </g>
+  <text x="775" y="227" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="10" letter-spacing="2" fill="#9890ac">cat-approved</text>
+</svg>
