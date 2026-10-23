@@ -36,9 +36,9 @@
 ### Feeding the snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ajsem1337/ajsem1337/main/assets/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ajsem1337/ajsem1337/main/assets/github-snake.svg" />
-  <img alt="An animated snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/ajsem1337/ajsem1337/main/assets/github-snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg" />
+  <img alt="An animated snake eating my GitHub contribution graph" src="assets/github-snake.svg" width="100%" />
 </picture>
 
 <p align="center"><sub>Powered by curiosity, Linux and cats.</sub></p>
