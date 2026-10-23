@@ -30,7 +30,7 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark&color_snake=%23f09bc0&color_dots=%23161b22,%2339283c,%236b3c59,%23aa6286,%23f09bc0
 
       - name: Store generated animations
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: contribution-snake
           path: dist/*.svg
