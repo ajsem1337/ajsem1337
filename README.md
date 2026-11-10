@@ -30,7 +30,8 @@
 | Project | What it does |
 | :--- | :--- |
 | [Steam License Cleanup](https://github.com/ajsem1337/Steam-License-Cleanup) | Review and remove unwanted free Steam licenses. |
-| [System Health](https://github.com/ajsem1337/system-health) | A readable, read-only health report for CachyOS and Arch Linux. |
+| [Custom Cursor Installer](https://github.com/ajsem1337/CustomCursorInstaller) | Install and activate the UwU animated cursor scheme on Windows. |
+| [System Menu](https://github.com/ajsem1337/system-menu) | A Noctalia plugin with an Arch package browser, btop, Kitty and system information. |
 | [NetworkMaster](https://github.com/ajsem1337/NetworkManager) | Network diagnostics, scanning and monitoring. |
 
 ### Feeding the snake
