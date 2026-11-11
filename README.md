@@ -31,7 +31,7 @@
 | :--- | :--- |
 | [Steam License Cleanup](https://github.com/ajsem1337/Steam-License-Cleanup) | Review and remove unwanted free Steam licenses. |
 | [Custom Cursor Installer](https://github.com/ajsem1337/CustomCursorInstaller) | Install and activate the UwU animated cursor scheme on Windows. |
-| [System Menu](https://github.com/ajsem1337/system-menu) | A Noctalia plugin with an Arch package browser, btop, Kitty and system information. |
+| [System Menu](https://github.com/ajsem1337/system-menu) | A Noctalia plugin with an Arch package browser, your choice of terminal and compatible AUR helper, btop and system information. |
 
 ### Feeding the snake
 
