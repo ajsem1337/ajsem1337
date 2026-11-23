@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="28" viewBox="0 0 143 28" role="img" aria-label="Made with AI">
+  <title>Made with AI</title>
+  <rect width="143" height="28" fill="#161b22"/>
+  <g fill="#f2c9dc">
+    <path d="M15 7.5c.42 3.4 2.6 5.58 6 6-3.4.42-5.58 2.6-6 6-.42-3.4-2.6-5.58-6-6 3.4-.42 5.58-2.6 6-6z"/>
+    <path d="M21 5c.18 1.3.7 1.82 2 2-1.3.18-1.82.7-2 2-.18-1.3-.7-1.82-2-2 1.3-.18 1.82-.7 2-2z" opacity=".75"/>
+  </g>
+  <text x="32" y="17.5" textLength="99" lengthAdjust="spacingAndGlyphs" fill="#fff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" font-weight="bold">MADE WITH AI</text>
+</svg>

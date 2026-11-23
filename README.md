@@ -29,9 +29,10 @@
 
 | Project | What it does |
 | :--- | :--- |
+| [package-menu](https://github.com/ajsem1337/package-menu) | A terminal UI for browsing, installing and removing Arch Linux packages. |
+| [System Menu](https://github.com/ajsem1337/system-menu) | A Noctalia launcher for your package manager, system monitor and terminal, with system information. |
 | [Steam License Cleanup](https://github.com/ajsem1337/Steam-License-Cleanup) | Review and remove unwanted free Steam licenses. |
 | [Custom Cursor Installer](https://github.com/ajsem1337/CustomCursorInstaller) | Install and activate the UwU animated cursor scheme on Windows. |
-| [System Menu](https://github.com/ajsem1337/system-menu) | A Noctalia plugin with an Arch package browser, your choice of terminal and compatible AUR helper, btop and system information. |
 
 ### Feeding the snake
 
